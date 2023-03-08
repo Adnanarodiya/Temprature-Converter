@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temprature</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Temprature Converter</h2>
+    </header>
+    <div class="container">
+      <div class="converter">
+        <div class="color">
+          <input
+            type="number"
+            id="Fahrenheit"
+            placeholder="Fahrenheit"
+            oninput="fahConvert(this.valueAsNumber)"
+            pattern="numeric"
+          />
+          <div class="addon">°F</div>
+        </div>
+        <hr />
+        <div class="color">
+          <input
+            type="number"
+            id="Celsius"
+            placeholder="Celsius"
+            oninput="celConvert(this.valueAsNumber)"
+            pattern="numeric"
+          />
+          <div class="addon">°C</div>
+        </div>
+        <hr />
+        <div class="color">
+          <input
+            type="number"
+            id="Kelvin"
+            placeholder="Kelvin"
+            oninput="kelConvert(this.valueAsNumber)"
+            pattern="numeric"
+          />
+          <div class="addon">°K</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
